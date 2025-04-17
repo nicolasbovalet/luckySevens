@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+  background: linear-gradient(135deg, #1f2d40, #2a415e);  
+}
+.formBody {
+    background: linear-gradient(135deg, #20242a, #2b3138);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+.gameBody {
+  background: linear-gradient(135deg, #1f2d40, #2a415e);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+.gameBody .navbar{
+  background: linear-gradient(135deg, #20242a, #2b3138);
+  span{
+    color: #fff;
+  }
+}
+.thickBar {
+  height: 80px;
+}
+.navbar-icon-circle {
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.myCard {
+    background-color: #3a3f47;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    color: #f2f2f2;
+}
+.button {
+    background-color: #5c6770;
+    color: #fefefe;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #74818c;
+  }
+  .row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  
+  .col {
+    flex: 1;
+  }
+
+  #profileDropdown:hover {
+    display: block;
+  }
+.cardBox {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  color: #222;
+  text-align: center;
+
+}
+
+#welcomeDiv {
+  width: 60%;
+  margin: 60px auto 20px auto; 
+  font-size: 1.5em;
+}
+
+#gameDiv {
+  width: 80%;
+  margin: 0 auto;
+  p {
+    font-size: 1.5em;
+  }
+  .col{
+    text-align: left;
+    width: 50%;
+    label{
+      font-size: 13px;
+    }
+  }
+  #placeBetDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  #addBetDiv {
+    flex: 2;
+  }
+  #selectBetDiv {
+    flex: 1.5;
+  }
+  #rollButton{
+    margin: 1em 0 0 0;
+    width: 25vmin;
+    font-size: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+#resultsDiv {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+#Dice1, #Dice2{
+  width: 100px;
+}
+#stopButton{
+  margin-top: 10px;
+}
+#betError {
+  text-align: left;
+}
+
+  @media all and (min-width: 800px){
+    #placeBetDiv{
+      flex-direction: row !important;
+    }
+    .row {
+      flex-direction: row;
+    }
+    #welcomeDiv{
+      width: 40%;
+    }
+    #gameDiv {
+      width: 55%;
+    }
+    #Dice1, #Dice2{
+      width: 200px;
+    }
+    #resultsDiv {
+      width: 55%;
+    }
+    #stopButton{
+      margin-top: 0;
+    }
+  }
