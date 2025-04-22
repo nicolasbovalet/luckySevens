@@ -173,7 +173,7 @@ function logOut() {
   localStorage.removeItem("city");
   localStorage.removeItem("email");
   localStorage.removeItem("bank");
-  window.location.href = "intro.html";
+  window.location.href = "index.html";
 }
 
 // Starts a game round if inputs are valid, rolls dice, and updates results
